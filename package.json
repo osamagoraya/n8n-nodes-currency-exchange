@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-currency-exchange",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n community node for currency exchange operations",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Usama Khalid",
+    "email": "osamakhalidgoraya@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "git+https://github.com/n8n-io/n8n-nodes-currency-exchange.git"
   },
   "engines": {
     "node": ">=20.15"
@@ -28,17 +28,16 @@
     "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
   },
   "files": [
-    "dist"
+    "dist",
+    "index.js"
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/CurrencyExchangeApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/CurrencyExchange/CurrencyExchange.node.js"
     ]
   },
   "devDependencies": {
@@ -48,6 +47,9 @@
     "gulp": "^5.0.0",
     "prettier": "^3.5.3",
     "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "axios": "^1.6.7"
   },
   "peerDependencies": {
     "n8n-workflow": "*"
