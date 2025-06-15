@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-currency-exchange",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "description": "n8n community node for currency exchange operations",
   "keywords": [
     "n8n-community-node-package"
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/n8n-io/n8n-nodes-currency-exchange.git"
+    "url": "git+https://github.com/osamagoraya/n8n-nodes-currency-exchange.git"
   },
   "engines": {
     "node": ">=20.15"
